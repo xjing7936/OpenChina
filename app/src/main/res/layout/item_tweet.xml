@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:padding="5dp"
+    android:layout_height="match_parent">
+
+    <com.jing.view.XCRoundImageView
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="5dp"
+        android:src="@drawable/shijian"
+        android:id="@+id/item_tweet_img"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/item_tweet_author"
+        android:textColor="#40AA52"
+        android:textSize="14sp"
+        android:text="ipnu"
+        android:layout_toRightOf="@+id/item_tweet_img"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"
+        />
+    <TextView
+        android:id="@+id/item_tweet_body"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/item_tweet_author"
+        android:layout_marginTop="5dp"
+        android:text="jksdhfkasf"
+        android:textColor="#000"
+        android:layout_alignLeft="@+id/item_tweet_author"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/item_tweet_likename"
+        android:layout_marginTop="3dp"
+        android:text="asdfs"
+        android:textSize="12sp"
+        android:layout_below="@+id/item_tweet_body"
+        android:layout_alignLeft="@+id/item_tweet_author"
+        />
+    <RelativeLayout
+        android:layout_below="@+id/item_tweet_likename"
+        android:layout_width="match_parent"
+        android:layout_marginTop="5dp"
+        android:layout_alignLeft="@+id/item_tweet_likename"
+        android:layout_height="wrap_content">
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/item_tweet_time"
+            android:layout_marginTop="5dp"
+            android:text="asdfs"
+            android:textSize="12sp"
+            android:layout_centerVertical="true"
+            android:drawableLeft="@drawable/shijian"
+            />
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/item_tweet_pinglun"
+            android:layout_marginTop="5dp"
+            android:text="asdfs"
+            android:textSize="12sp"
+            android:layout_centerVertical="true"
+            android:drawableLeft="@drawable/pinglun"
+            android:layout_alignParentRight="true"
+            />
+        <ImageView
+            android:id="@+id/item_tweet_good"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_marginRight="10dp"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/item_tweet_pinglun"
+            android:src="@drawable/shijian"/>
+
+    </RelativeLayout>
+</RelativeLayout>

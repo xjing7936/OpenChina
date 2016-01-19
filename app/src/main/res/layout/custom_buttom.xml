@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="horizontal"
+    android:background="#ffffff"
+    android:gravity="center_vertical"
+    android:layout_alignParentBottom="true"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:layout_weight="1"
+        android:id="@+id/home_tv_news"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="综合"
+        android:textSize="14sp"
+        android:gravity="center"
+        android:drawableTop="@drawable/news_selector"/>
+
+    <TextView
+        android:layout_weight="1"
+        android:id="@+id/home_tv_tweet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="动弹"
+        android:textSize="14sp"
+        android:gravity="center"
+        android:drawableTop="@drawable/tweet_selector"/>
+    <ImageView
+        android:layout_weight="1"
+        android:id="@+id/home_tv_quick"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+       android:src="@drawable/btn_quickoption_nor"
+        />
+    <TextView
+        android:layout_weight="1"
+        android:id="@+id/home_tv_find"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="发现"
+        android:textSize="14sp"
+        android:gravity="center"
+        android:drawableTop="@drawable/find_selector"/>
+    <TextView
+        android:layout_weight="1"
+        android:id="@+id/home_tv_me"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="我"
+        android:textSize="14sp"
+        android:gravity="center"
+        android:drawableTop="@drawable/me_selector"/>
+
+</LinearLayout>

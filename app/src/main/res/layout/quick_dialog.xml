@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:background="#FFFFFF"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:gravity="center"
+        android:layout_weight="1"
+        android:padding="15dp">
+
+        <TextView
+            android:id="@+id/quick_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/quick_option_text_nor"
+            android:gravity="center"
+            android:text="文字"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/quick_album"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/quick_option_album_nor"
+            android:gravity="center"
+            android:text="相册"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/quick_photo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/quick_option_photo_nor"
+            android:gravity="center"
+            android:text="拍照"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:padding="15dp">
+
+        <TextView
+            android:id="@+id/quick_voice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/quick_option_voice_nor"
+            android:gravity="center"
+            android:text="语音"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/quick_scan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/quick_option_scan_nor"
+            android:gravity="center"
+            android:text="扫一扫"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/quick_note"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/quick_option_note_nor"
+            android:gravity="center"
+            android:text="便签"
+            android:textSize="16sp" />
+    </LinearLayout>
+</LinearLayout>

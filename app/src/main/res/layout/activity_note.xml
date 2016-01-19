@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:expandable_selector="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include
+        android:id="@+id/in_top"
+        layout="@layout/top" />
+
+    <RelativeLayout
+        android:id="@+id/note_rl"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@id/in_top"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:background="#83E593">
+
+        <TextView
+            android:id="@+id/note_tv_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:text="2016/10/1" />
+
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/note_img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/in_top"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:src="@drawable/green" />
+
+    <EditText
+        android:id="@+id/note_ed_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/note_img"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        android:background="#A7F2B4" />
+
+    <com.karumi.expandableselector.ExpandableSelector
+        android:id="@+id/es_icons"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="@dimen/expandable_selector_margin"
+
+
+        expandable_selector:animation_duration="200"
+        expandable_selector:collapse_interpolator="@android:anim/decelerate_interpolator"
+        expandable_selector:container_interpolator="@android:anim/accelerate_decelerate_interpolator"
+        expandable_selector:expand_interpolator="@android:anim/accelerate_interpolator" />
+
+
+</RelativeLayout>
