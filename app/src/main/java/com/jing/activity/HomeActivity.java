@@ -113,21 +113,21 @@ public class HomeActivity extends ActionBarActivity implements View.OnClickListe
         tv_me = (TextView) findViewById(R.id.home_tv_me);//我
         tv_tweet = (TextView) findViewById(R.id.home_tv_tweet);//动弹
         img_quick = (ImageView) findViewById(R.id.home_tv_quick);//快速
-//        Drawable drawable1 = getResources().getDrawable(R.drawable.widget_bar_news_nor);
-//        drawable1.setBounds(0, 0, 50, 50);//第一0是距左边距离，第二0是距上边距离，40分别是长宽
-//        tv_news.setCompoundDrawables(null,drawable1, null, null);//只放左边
-//
-//        Drawable drawable2 = getResources().getDrawable(R.drawable.widget_bar_explore_nor);
-//        drawable2.setBounds(0, 0, 50, 50);//第一0是距左边距离，第二0是距上边距离，40分别是长宽
-//        tv_find.setCompoundDrawables(null,drawable2,  null, null);//只放左边
-//
-//        Drawable drawable3 = getResources().getDrawable(R.drawable.widget_bar_tweet_nor);
-//        drawable3.setBounds(0, 0, 50, 50);//第一0是距左边距离，第二0是距上边距离，40分别是长宽
-//        tv_tweet.setCompoundDrawables(null,drawable3,  null, null);//只放左边
-//
-//        Drawable drawable4 = getResources().getDrawable(R.drawable.widget_bar_me_nor);
-//        drawable4.setBounds(0, 0, 50, 50);//第一0是距左边距离，第二0是距上边距离，40分别是长宽
-//        tv_me.setCompoundDrawables(null,drawable4,  null, null);//只放左边
+        Drawable drawable1 = getResources().getDrawable(R.drawable.widget_bar_news_nor);
+        drawable1.setBounds(0, 0, 50, 50);//第一0是距左边距离，第二0是距上边距离，40分别是长宽
+        tv_news.setCompoundDrawables(null,drawable1, null, null);//只放左边
+
+        Drawable drawable2 = getResources().getDrawable(R.drawable.widget_bar_explore_nor);
+        drawable2.setBounds(0, 0, 50, 50);//第一0是距左边距离，第二0是距上边距离，40分别是长宽
+        tv_find.setCompoundDrawables(null,drawable2,  null, null);//只放左边
+
+        Drawable drawable3 = getResources().getDrawable(R.drawable.widget_bar_tweet_nor);
+        drawable3.setBounds(0, 0, 50, 50);//第一0是距左边距离，第二0是距上边距离，40分别是长宽
+        tv_tweet.setCompoundDrawables(null,drawable3,  null, null);//只放左边
+
+        Drawable drawable4 = getResources().getDrawable(R.drawable.widget_bar_me_nor);
+        drawable4.setBounds(0, 0, 50, 50);//第一0是距左边距离，第二0是距上边距离，40分别是长宽
+        tv_me.setCompoundDrawables(null,drawable4,  null, null);//只放左边
 
         tv_news.setOnClickListener(this);
         tv_tweet.setOnClickListener(this);
